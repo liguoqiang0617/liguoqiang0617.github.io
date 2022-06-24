@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李国强-联系</title>
+    <!-- 标签页的小logo -->
+    <link rel="icon" href="./Images/logo-small.png">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./resume.css">
+    <link rel="stylesheet" href="./work.css">
+    <!-- 再link链接connect的css -->
+    <link rel="stylesheet" href="./connect.css">
+</head>
+
+<body>
+    <!-- 引入CSDN找来的js -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- 页眉 -->
+    <header class="head fixed">
+        <!-- 导航 -->
+        <nav class="line1 fixed">
+            <!-- header顶部左侧left(hl) -->
+            <div class="hl">
+                <a href="./pre.html">李国强 | 个人网站</a>
+            </div>
+            <!-- header顶部右侧right(hr) -->
+            <div class="hr">
+                <ul class="ur">
+                    <!-- name="comeback"创建一个书签 -->
+                    <li><a name="comeback" href="./index.html">主页</a></li>
+                    <li><a href="./resume.html">简历</a></li>
+                    <li><a href="./work.html">作品</a></li>
+                    <!-- 本页面“作品”加方框表示当前在这个页面 -->
+                    <li class="border1"><a href="./connect.html">联系</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- header中间center（hc） -->
+        <div class="hc">
+            <div class="line2">与我联系</div>
+            <div class="line3"><br>如果你想的话</div>
+        </div>
+    </header>
+    <!-- 内容 -->
+    <div class="content text">
+        <!-- 参考实例操作-表单 -->
+        <h2>你需要填写以下内容</h2>
+        <fieldset>
+            <legend>你的信息</legend>
+            <div class="tableRow">
+                <label for="beans">
+                    你的身份：
+                </label>
+                <select id="beans" name="beans">
+                    <option value="HR">企业/公司HR</option>
+                    <option value="Teacher">高校教师</option>
+                    <option value="Internetusers">论坛网友</option>
+                    <option value="Otrhers">其他</option>
+                </select>
+            </div>
+            <div class="tableRow">
+                <label>意向的联系方式：</label>
+                <input type="radio" id="email_beantype" name="beantype" value="email">
+                <label for="email_beantype">邮箱</label>
+                <input type="radio" id="tel_beantype" name="beantype" value="tel" checked>
+                <label for="tel_beantype">电话</label>
+                <input type="radio" id="qq_beantype" name="beantype" value="qq" checked>
+                <label for="qq_beantype">QQ</label>
+                <input type="radio" id="wx_beantype" name="beantype" value="wx" checked>
+                <label for="wx_beantype">微信</label>
+                <input type="radio" id="other_beantype" name="beantype" value="other" checked>
+                <label for="other_beantype">其它</label>
+            </div>
+            <div class="tableRow">
+                <label for="name">姓名：</label>
+                <input type="text" id="name" name="name" value="" placeholder="李国强" required>
+            </div>
+            <div class="tableRow">
+                <label for="phone">手机号码：</label>
+                <input type="tel" id="phone" name="phone" value="" placeholder="+86-18212344321" required>
+            </div>
+            <div class="tableRow">
+                <label for="email">邮件地址：</label>
+                <input type="text" id="email" name="email" value="" placeholder="xxxxxx@qq.com" required>
+            </div>
+            <div class="tableRow">
+                <label for="bags">预期联系次数：</label>
+                <input type="number" id="bags" name="bags" min="1" max="5">（1~5）
+            </div>
+            <div class="tableRow">
+                <label for="date">第一次联系日期：</label>
+                <input type="date" name="date">
+            </div>
+            <div class="tableRow">
+                <label>对我感兴趣的部分：</label>
+                <input type="checkbox" id="study_extras" name="extras[]" value="study">
+                <label for="study_extras">学业</label>
+                <input type="checkbox" id="research_extras" name="extras[]" value="research">
+                <label for="research_extras">科研</label>
+                <input type="checkbox" id="club_extras" name="extras[]" value="club">
+                <label for="club_extras">社团</label>
+                <input type="checkbox" id="photo_extras" name="extras[]" value="photo" checked>
+                <label for="photo_extras">摄影作品</label>
+                <input type="checkbox" id="video_extras" name="extras[]" value="video" checked>
+                <label for="video_extras">视频作品</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>你的留言</legend>
+            <div class="tableRow">
+                <!-- 你的留言legend已经有了，不需要label了 -->
+                <label for="comments"></label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+
+        </fieldset>
+        <div class="tableRow">
+            <label></label>
+            <input type="submit" value="提交" class="button">
+        </div>
+        <br><br><br>
+        <!-- 指向标签的链接 -->
+        如果你想了解我更多，可以选择<a class="comeback" href="#comeback">导航栏选项</a>
+
+    </div>
+    <footer class="footer1">
+        &copy; 2022, Li Guoqiang
+        <br>
+        Final web front-end assignment on personal website design.
+    </footer>
+</body>
+
+</html>

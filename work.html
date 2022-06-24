@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李国强-作品</title>
+    <!-- 标签页的小logo -->
+    <link rel="icon" href="./Images/logo-small.png">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./resume.css">
+    <!-- 再link链接work的css -->
+    <link rel="stylesheet" href="./work.css">
+</head>
+
+<body>
+    <!-- 引入CSDN找来的js -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- 页眉 -->
+    <header class="head fixed">
+        <!-- 导航 -->
+        <nav class="line1 fixed">
+            <!-- header顶部左侧left(hl) -->
+            <div class="hl">
+                <a href="./pre.html">李国强 | 个人网站</a>
+            </div>
+            <!-- header顶部右侧right(hr) -->
+            <div class="hr">
+                <ul class="ur">
+                    <!-- name="comeback"创建一个书签 -->
+                    <li><a name="comeback" href="./index.html">主页</a></li>
+                    <li><a href="./resume.html">简历</a></li>
+                    <!-- 本页面“简历”加方框表示当前在这个页面 -->
+                    <li class="border1"><a href="./work.html">作品</a></li>
+                    <li><a href="./connect.html">联系</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- header中间center（hc） -->
+        <div class="hc">
+            <div class="line2">个人作品</div>
+            <div class="line3"><br>摄影 | 视频 | 编程 | 其他 </div>
+        </div>
+    </header>
+    <!-- 内容 -->
+    <div class="content text">
+
+        <table>
+            <caption>
+                <a name="gotosheying">摄影作品</a>
+            </caption>
+            <!-- 调整高度+加单元格下边框+加粗 -->
+            <tr>
+                <!-- 在浏览器检查里看一下表格单元格宽度≈392px -->
+                <!-- 4:3和3:4的照片交错排列 -->
+                <th>
+                    <p><img src="./Images/01.png" alt="" width="392px"></p>
+                    <p><img src="./Images/11.png" alt="" width="392px"></p>
+                </th>
+                <th>
+                    <p><img src="./Images/12.png" alt="" width="392px"></p>
+                    <p><img src="./Images/02.png" alt="" width="392px"></p>
+                </th>
+                <th>
+                    <p><img src="./Images/03.png" alt="" width="392px"></p>
+                    <p><img src="./Images/13.png" alt="" width="392px"></p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <p><img src="./Images/04.png" alt="" width="392px"></p>
+                    <p><img src="./Images/14.png" alt="" width="392px"></p>
+                </th>
+                <th>
+                    <p><img src="./Images/15.png" alt="" width="392px"></p>
+                    <p><img src="./Images/05.png" alt="" width="392px"></p>
+                </th>
+                <th>
+                    <p><img src="./Images/06.png" alt="" width="392px"></p>
+                    <p><img src="./Images/16.png" alt="" width="392px"></p>
+                </th>
+            </tr>
+        </table>
+        <table>
+            <caption>
+                视频作品
+            </caption>
+            <tr>
+                <th>
+                    <!-- 自动播放 -->
+                    <video src="./Images/v.mp4" controls="controls" autoplay="autoplay"></video>
+                </th>
+            </tr>
+        </table>
+        <br><br><br>
+        <!-- 指向标签的链接 -->
+        如果你想了解我更多，可以选择<a class="comeback" href="#comeback">导航栏选项</a>
+    </div>
+    <footer class="footer1">
+        &copy; 2022, Li Guoqiang
+        <br>
+        Final web front-end assignment on personal website design.
+    </footer>
+</body>
+
+</html>

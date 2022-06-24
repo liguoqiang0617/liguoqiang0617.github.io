@@ -1,0 +1,52 @@
+body {
+    /* 都设置为0使得页面不会因为图片过长而能上下滚动 */
+    padding: 0;
+    margin: 0;
+    /* 同时设置背景颜色透明色和背景图片 */
+    background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)), url(./Images/pre-bc2.png);
+    /*100%按容器比例撑满，使得图片适应整个容器，不然会放大*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+a {
+    /* 取消下划线，不然很丑 */
+    text-decoration: none;
+}
+.title {
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.title .line1 {
+    font-size: 50px;
+    letter-spacing: 8px;
+}
+.title .line2 {
+    font-size: 20px;
+    letter-spacing: 2px;
+
+}
+.title-wrap {
+    /* 相对定位 */
+    position: relative;
+    /* 相对于视窗高度为100% */
+    height: 100vh;
+    /* 将border和padding数值包含在width和height之内,盒子的大小不变 */
+    box-sizing: border-box;
+    padding: 160px;
+}
+
+.index-btn {
+    /* 相对定位 */
+    position: relative;
+    font-weight: bold;
+    /* 按钮和文字对齐 */
+    left: 170px;
+    top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: (0, 0, 0, 0);
+    border: 3px solid #fff;
+}
